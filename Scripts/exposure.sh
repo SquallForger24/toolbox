@@ -4,8 +4,8 @@
 get_cert_fqdns() {
 	ip=$1
 	cert_data=$(openssl s_client -connect "${ip}:443" -servername "${ip}" 2>/dev/null </dev/null)
-	fqdns=$(echo ${cert_data} | openssl x509 -text | grep -oP '(?<=DNS:)([^,]*)' | tr -d ' ')
-	echo $fqdns
+	fqdns=$(echo "${cert_data}" | openssl x509 -text | grep -oP '(?<=DNS:)([^,]*)' | tr -d ' ')
+	echo "${fqdns}"
 }
 
 # Function to send Curl requests with FQDN values as Host header value
